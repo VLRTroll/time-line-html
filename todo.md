@@ -1,0 +1,7 @@
+- Adicionar as publicações do Twitter
+- Abrir apresentação de imagens
+- Adicionar os filtros
+  - Ano
+  - Mês
+  - Escala
+- Corrigir fonte dos meses
