@@ -1,187 +1,48 @@
 @import "./fonts.css";
-@import "./colors.css";
-@import "./month-img.css";
 
-* {
-  margin: 0;
-  padding: 0;
-
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100vh;
-  width: 100vw;
-}
-
-.timeline-wrapper {
-  height: 100%;
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#timeline-wrapper {
-  position: relative;
-  height: 600px;
+object {
   width: 1000px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 600px;
 }
 
-/* ======================== Faixa de mês ======================== */
-.month-banner {
-  height: 20%;
-  width: 100%;
-
-  background: linear-gradient(
-    to right,
-    var(--main-color),
-    var(--secondary-color)
-  );
-
-  padding: 0 4%;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+object html {
+  overflow: auto;
 }
 
-.month-banner p {
-  font-family: grandis;
-  color: white;
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 65%); /* Black w/ opacity */
+}
 
-  font-size: 85px;
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
-/* ======================== Eventos do mês ======================== */
-.event-wrapper {
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-evenly;
-}
-
-.event-wrapper.down {
-  align-items: flex-start;
-}
-
-.event {
-  width: min-content;
-}
-
-.down .event {
-  width: min-content;
-
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.down p.day {
-  margin-top: auto;
-}
-
-/* ======================== Linha de Marcação ======================== */
-.line {
-  height: 80px;
-  width: 50%;
-
-  /* background-color: aqua; */
-
-  display: flex;
-  justify-content: flex-end;
-}
-
-p.day {
-  color: var(--main-color);
-  font-size: 35px;
-  font-family: keep-calm;
-}
-
-.publishment .line {
-  border-right: 3px dotted var(--main-color);
-}
-
-.national .line,
-.manifest .line {
-  border-right: 3px solid var(--main-color);
-}
-
-.es .line {
-  border-right: 3px dashed var(--main-color);
-}
-
-/* ======================== Conteudo do evento ======================== */
-/* Publicação do Twitter */
-.event img {
-  max-height: 250px;
-  max-width: 250px;
-}
-
-/* Evento normal */
-.event .event-text {
-  width: 250px;
-  margin: 10px 0;
-
-  display: flex;
-  align-items: center;
-}
-
-.event .event-text > * + * {
-  margin-left: 15px;
-}
-
-.event .event-text p.day {
-  margin: 0;
-}
-
-.event .event-text p.text {
-  font-family: cafe;
-  font-style: italic;
-}
-
-/* Manifestação */
-.down .event.manifest {
-  text-align: center;
-}
-
-.event.manifest .event-text {
-  flex-direction: column;
-}
-
-.event.manifest h1 {
-  color: var(--main-color);
-  font-size: 40px;
-}
-
-.event.manifest .button-wrapper {
-  height: 50px;
-  width: 110px;
-
-  background: url("Rabiscos/Circulo_botao.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  display: flex;
-  justify-content: center;
-}
-
-.event.manifest button {
-  color: var(--main-color);
-  text-transform: uppercase;
-  font-size: small;
-
-  outline: none;
-  border: none;
-  background: none;
-
-  margin-left: -10px;
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
   cursor: pointer;
 }
