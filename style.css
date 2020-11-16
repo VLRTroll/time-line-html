@@ -1,7 +1,15 @@
 @import "./fonts.css";
 
+#timeline-wrapper {
+  display: flex;
+  align-items: flex-end;
+
+  height: 600px;
+  overflow: auto hidden;
+}
+
 object {
-  width: 1000px;
+  min-width: 1000px;
   height: 600px;
 }
 
