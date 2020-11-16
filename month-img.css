@@ -1,0 +1,12 @@
+.month-banner img[alt="Jan2019"] {
+  position: absolute;
+  width: 480px;
+
+  right: -2px;
+  bottom: 160px;
+}
+
+.month-banner img[alt="Set2019"] {
+  height: 150%;
+  margin-bottom: 80px;
+}
