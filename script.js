@@ -1,17 +1,54 @@
-const modal = document.getElementById("myModal");
-window.modal = modal;
-
 // Get the <span> element that closes the modal
 const closeBtn = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-closeBtn.onclick = function () {
+function handleCloseModal() {
   modal.style.display = "none";
-};
+  window.audio.pause();
+  window.audio.currentTime = 0;
+
+  const p = document.querySelector("#myModal p");
+  p.innerText = "";
+}
+
+// When the user clicks on <span> (x), close the modal
+closeBtn.onclick = handleCloseModal;
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    handleCloseModal();
   }
 };
+
+window.manifests = {
+  "13/08/2019": {
+    audio: "../manifest/13A_AGOSTO_2019/13a.mp3",
+    photos: [
+      "assets/manifest/13A_AGOSTO_2019/Foto 03.jpg",
+      "assets/manifest/13A_AGOSTO_2019/Foto 02.jpg",
+      "assets/manifest/13A_AGOSTO_2019/Foto 01.jpg",
+    ],
+  },
+};
+
+/* - - - - - - - FILTRAGEM DE MESES  - - - - - - - - */
+
+const objects = document.querySelectorAll("object");
+const scopeSelect = document.querySelector("#scope-select select");
+const yearSelect = document.querySelector("#year-select select");
+
+const handleFilterUpdate = () => {
+  const scope = scopeSelect.value;
+  const year = yearSelect.value;
+
+  Array.from(objects).forEach((obj) => {
+    obj.style.display =
+      obj.classList.contains(scope) && obj.classList.contains(year)
+        ? "block"
+        : "none";
+  });
+};
+
+scopeSelect.addEventListener("change", handleFilterUpdate);
+yearSelect.addEventListener("change", handleFilterUpdate);
+handleFilterUpdate();

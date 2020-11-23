@@ -13,25 +13,54 @@
         <p></p>
       </div>
     </div>
-
-    <script src="./script.js"></script>
-
-    <div id="timeline-wrapper">
-      <object data="./assets/SVG/Jan2019.html" type="text/html"></object>
-      <object data="./assets/SVG/Feb2019.html" type="text/html"></object>
-      <object data="./assets/SVG/Mar2019.html" type="text/html"></object>
-      <object data="./assets/SVG/Abr2019.html" type="text/html"></object>
-      <object data="./assets/SVG/Mai20191.html" type="text/html"></object>
-      <object data="./assets/SVG/Mai20192.html" type="text/html"></object>
-      <object data="./assets/SVG/Ago2019.html" type="text/html"></object>
-      <object data="./assets/SVG/Set2019.html" type="text/html"></object>
-      <object data="./assets/SVG/Out2019.html" type="text/html"></object>
-      <object data="./assets/SVG/Nov2019.html" type="text/html"></object>
-      <object data="./assets/SVG/Dez2019.html" type="text/html"></object>
-      <object data="./assets/SVG/Jan20201.html" type="text/html"></object>
-      <object data="./assets/SVG/Jan20202.html" type="text/html"></object>
-      <object data="./assets/SVG/Jan20203.html" type="text/html"></object>
+    <script>
+      const modal = document.getElementById("myModal");
+      window.modal = modal; // cria uma variável de acesso para os objects
+    </script>
+    
+    <div class="filter-wrapper">
+      <div id="scope-select" class="custom-select">
+      <select>
+        <option value="all">Tudo</option>
+        <option value="national">Nacional</option>
+        <option value="es">Estadual</option>
+      </select>
     </div>
+    
+    <div id="year-select" class="custom-select">
+      <select>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+      </select>
+    </div>
+    </div>
+    
+
+    <!-- <div id="timeline-wrapper">
+      <object class="2019 all national" data="./assets/SVG/Jan2019.html" type="text/html"></object>
+      <object class="2019 all" data="./assets/SVG/Feb2019.html" type="text/html"></object>
+      <object class="2019 national" data="./assets/nacional/Feb2019.html" type="text/html"></object>
+      <object class="2019 es" data="./assets/es/Fev2019.html" type="text/html"></object>
+      <object class="2019 all national" data="./assets/SVG/Mar2019.html" type="text/html"></object>
+      <object class="2019 all national" data="./assets/SVG/Abr2019.html" type="text/html"></object>
+      <object class="2019 all national" data="./assets/SVG/Mai20191.html" type="text/html"></object>
+      <object class="2019 all national" data="./assets/SVG/Mai20192.html" type="text/html"></object>
+      <object class="2019 all national" data="./assets/SVG/Ago2019.html" type="text/html"></object>
+      <object class="2019 all national" data="./assets/SVG/Set2019.html" type="text/html"></object>
+      <object class="2019 all national" data="./assets/SVG/Out2019.html" type="text/html"></object>
+      <object class="2019 all national" data="./assets/SVG/Nov2019.html" type="text/html"></object>
+      <object class="2019 all national" data="./assets/SVG/Dez2019.html" type="text/html"></object>
+      <object class="2020 all national" data="./assets/SVG/Jan20201.html" type="text/html"></object>
+      <object class="2020 all" data="./assets/SVG/Jan20202.html" type="text/html"></object>
+      <object class="2020 national" data="./assets/nacional/Jan20202.html" type="text/html"></object>
+      <object class="2020 es" data="./assets/es/Jan2020.html" type="text/html"></object>
+      <object class="2020 all national" data="./assets/SVG/Jan20203.html" type="text/html"></object>
+      <object class="2020 all national" data="./assets/SVG/Jan20204.html" type="text/html"></object>
+      <object class="2020 all national" data="./assets/SVG/Jan20205.html" type="text/html"></object>
+      <object class="2020 all national" data="./assets/SVG/Fev2020.html" type="text/html"></object>
+      <object class="2020 all national" data="./assets/SVG/Mar2020.html" type="text/html"></object>
+    </div> -->
+    <script src="./script.js"></script>
   </body>
 </html>
 

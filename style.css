@@ -1,5 +1,24 @@
 @import "./fonts.css";
 
+/* Select box */
+.filter-wrapper {
+  display: flex;
+}
+
+.filter-wrapper > * + * {
+  margin-left: 15px;
+}
+
+.custom-select {
+  min-width: 150px;
+}
+
+.custom-select select {
+  width: 100%;
+}
+
+/* Timeline */
+
 #timeline-wrapper {
   display: flex;
   align-items: flex-end;
@@ -38,10 +57,22 @@ object html {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  height: 700px;
+  position: relative;
+}
+
+.modal-content p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* The Close Button */
 .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+
   color: #aaaaaa;
   float: right;
   font-size: 28px;
@@ -53,4 +84,47 @@ object html {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Crossfading image transition */
+#myModal img {
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  /* if you only want to cycle a finite amount of times, 
+ simply change 'infinite' with # of iterations you need */
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
+  animation-direction: alternate; /* not strictly necessary */
+  position: absolute;
+
+  max-width: 1000px;
+}
+
+#myModal img:nth-of-type(1) {
+  animation-delay: 21s;
+}
+
+#myModal img:nth-of-type(2) {
+  animation-delay: 11s;
+}
+
+#myModal img:nth-of-type(3) {
+  /* add some delay for the first picture as well */
+  animation-delay: 1s;
+}
+
+@keyframes cf3FadeInOut {
+  /* distributing times evenly */
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

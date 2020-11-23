@@ -5,3 +5,5 @@
 - Um objeto HTML cria um documento interno e seu escopo é separado do escopo global da página
 
 - É possível utilizar a tag script dentro de um SVG
+
+- A tag Title do svg é usada como tooltip da imagem

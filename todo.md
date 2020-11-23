@@ -1,5 +1,5 @@
-- Abrir apresentação de imagens
-- Adicionar os filtros
-  - Ano
-  - Escala
+- Terminar apresentação de imagens
+- Adicionar linha na prancheta estadual de 2020
+- Corrigir Title dos SVGs
 - Estilizar Scroll bar
+- Estilizar publicações não carregadas
