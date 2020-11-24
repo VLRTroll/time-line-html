@@ -1,14 +1,17 @@
 // Get the <span> element that closes the modal
 const closeBtn = document.getElementsByClassName("close")[0];
 
-function handleCloseModal() {
+const handleCloseModal = () => {
   modal.style.display = "none";
+  modal.classList = "modal";
+
   window.audio.pause();
   window.audio.currentTime = 0;
 
   const p = document.querySelector("#myModal p");
   p.innerText = "";
-}
+};
+window.handleCloseModal = handleCloseModal;
 
 // When the user clicks on <span> (x), close the modal
 closeBtn.onclick = handleCloseModal;
@@ -27,6 +30,37 @@ window.manifests = {
       "assets/manifest/13A_AGOSTO_2019/Foto 03.jpg",
       "assets/manifest/13A_AGOSTO_2019/Foto 02.jpg",
       "assets/manifest/13A_AGOSTO_2019/Foto 01.jpg",
+    ],
+  },
+  "15/05/2019": {
+    audio: "../manifest/15M_MAIO_2019/15m.mp3",
+    photos: [
+      "assets/manifest/15M_MAIO_2019/Foto 03.jpg",
+      "assets/manifest/15M_MAIO_2019/Foto 02.jpg",
+      "assets/manifest/15M_MAIO_2019/Foto 01.jpg",
+    ],
+  },
+  "30/05/2019": {
+    audio: "../manifest/30M_MAIO_2019/30m.mp3",
+    photos: [
+      "assets/manifest/30M_MAIO_2019/Foto 03.jpg",
+      "assets/manifest/30M_MAIO_2019/Foto 02.jpg",
+      "assets/manifest/30M_MAIO_2019/Foto 01.jpg",
+    ],
+  },
+  "01/10/2019": {
+    audio: "../manifest/GREVE GERAL_OUTUBRO_2019/01o.mp3",
+    photos: [
+      "assets/manifest/GREVE GERAL_OUTUBRO_2019/Foto 03.jpg",
+      "assets/manifest/GREVE GERAL_OUTUBRO_2019/Foto 02.jpg",
+      "assets/manifest/GREVE GERAL_OUTUBRO_2019/Foto 01.jpg",
+    ],
+  },
+  "18/03/2020": {
+    audio: "../manifest/18M_MARÇO_2020/18m.mp3",
+    photos: [
+      "assets/manifest/18M_MARÇO_2020/Foto 02.jpg",
+      "assets/manifest/18M_MARÇO_2020/Foto 01.jpg",
     ],
   },
 };
