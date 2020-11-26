@@ -3,6 +3,7 @@ const closeBtn = document.getElementsByClassName("close")[0];
 
 const handleCloseModal = () => {
   modal.style.display = "none";
+  modal.classList = "modal";
 
   window.audio.pause();
   window.audio.currentTime = 0;

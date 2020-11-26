@@ -1,4 +1,0 @@
-- Adicionar linha na prancheta estadual de 2020
-- Corrigir Title dos SVGs
-- Estilizar Scroll bar
-- Estilizar publicações não carregadas
