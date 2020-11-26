@@ -109,6 +109,7 @@ object html {
   animation-timing-function: ease-in-out;
   /* if you only want to cycle a finite amount of times, 
  simply change 'infinite' with # of iterations you need */
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate; /* not strictly necessary */
   position: absolute;
@@ -116,56 +117,15 @@ object html {
   max-width: 1000px;
 }
 
-#myModal.t13_08_2019 img {
-  animation-duration: 25s;
+#myModal img:nth-of-type(1) {
+  animation-delay: 9s;
 }
 
-#myModal.t13_08_2019 img:nth-of-type(1) {
-  animation-delay: 25s;
+#myModal img:nth-of-type(2) {
+  animation-delay: 6s;
 }
 
-#myModal.t13_08_2019 img:nth-of-type(2) {
-  animation-delay: 16s;
-}
-
-#myModal.t13_08_2019 img:nth-of-type(3) {
+#myModal img:nth-of-type(3) {
   /* add some delay for the first picture as well */
-  animation-delay: 8s;
-}
-
-#myModal.t15_05_2019 img,
-#myModal.t30_05_2019 img,
-#myModal.t01_10_2019 img {
-  animation-duration: 35s;
-}
-
-#myModal.t15_05_2019 img:nth-of-type(1),
-#myModal.t30_05_2019 img:nth-of-type(1),
-#myModal.t01_10_2019 img:nth-of-type(1) {
-  animation-delay: 35s;
-}
-
-#myModal.t15_05_2019 img:nth-of-type(2),
-#myModal.t30_05_2019 img:nth-of-type(2),
-#myModal.t01_10_2019 img:nth-of-type(2) {
-  animation-delay: 21s;
-}
-
-#myModal.t15_05_2019 img:nth-of-type(3),
-#myModal.t30_05_2019 img:nth-of-type(3),
-#myModal.t01_10_2019 img:nth-of-type(3) {
-  /* add some delay for the first picture as well */
-  animation-delay: 10s;
-}
-
-#myModal.t18_03_2020 img {
-  animation-duration: 30s;
-}
-
-#myModal.t18_03_2020 img:nth-of-type(1) {
-  animation-delay: 30s;
-}
-
-#myModal.t18_03_2020 img:nth-of-type(2) {
-  animation-delay: 15s;
+  animation-delay: 3s;
 }
