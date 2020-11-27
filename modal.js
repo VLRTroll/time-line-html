@@ -1,5 +1,5 @@
 function openModal(date) {
-  const win = window.top;
+  const win = window.parent;
   win.modal.style.display = "block";
   win.modal.classList.add(`t${date.replace(/\//g, "_")}`);
 
