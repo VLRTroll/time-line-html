@@ -27,8 +27,8 @@ window.manifests = {
   "13/08/2019": {
     audio: "../manifest/13A_AGOSTO_2019/13a.mp3",
     photos: [
-      "assets/manifest/13A_AGOSTO_2019/Foto 03.jpg",
-      "assets/manifest/13A_AGOSTO_2019/Foto 02.jpg",
+      "assets/manifest/13A_AGOSTO_2019/Foto 03.JPG",
+      "assets/manifest/13A_AGOSTO_2019/Foto 02.JPG",
       "assets/manifest/13A_AGOSTO_2019/Foto 01.jpg",
     ],
   },
@@ -37,7 +37,7 @@ window.manifests = {
     photos: [
       "assets/manifest/15M_MAIO_2019/Foto 03.jpg",
       "assets/manifest/15M_MAIO_2019/Foto 02.jpg",
-      "assets/manifest/15M_MAIO_2019/Foto 01.jpg",
+      "assets/manifest/15M_MAIO_2019/Foto 01.JPG",
     ],
   },
   "30/05/2019": {
@@ -51,8 +51,8 @@ window.manifests = {
   "01/10/2019": {
     audio: "../manifest/GREVE GERAL_OUTUBRO_2019/01o.mp3",
     photos: [
-      "assets/manifest/GREVE GERAL_OUTUBRO_2019/Foto 03.jpg",
-      "assets/manifest/GREVE GERAL_OUTUBRO_2019/Foto 02.jpg",
+      "assets/manifest/GREVE GERAL_OUTUBRO_2019/Foto 03.JPG",
+      "assets/manifest/GREVE GERAL_OUTUBRO_2019/Foto 02.JPG",
       "assets/manifest/GREVE GERAL_OUTUBRO_2019/Foto 01.jpg",
     ],
   },
